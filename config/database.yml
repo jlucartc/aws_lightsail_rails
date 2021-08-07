@@ -19,6 +19,8 @@ default: &default
   encoding: unicode
   # For details on connection pooling, see Rails configuration guide
   # https://guides.rubyonrails.org/configuring.html#database-pooling
+  username: <%= ENV.fetch("AWS_LIGHTSAIL_RAILS_DB_USERNAME") %>
+  password: <%= ENV.fetch("AWS_LIGHTSAIL_RAILS_DB_PASSWORD") %>
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
 
 development:
@@ -82,5 +84,3 @@ test:
 production:
   <<: *default
   database: aws_lightsail_rails_production
-  username: aws_lightsail_rails
-  password: <%= ENV['AWS_LIGHTSAIL_RAILS_DATABASE_PASSWORD'] %>
