@@ -19,7 +19,7 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.7'
 gem 'capistrano-rvm'
 gem 'capistrano-bundler', '>= 1.1.0'
-gem 'capistrano3-puma', github: "seuros/capistrano-puma"
+gem 'capistrano3-puma'
 gem 'passenger'
 gem 'rexml'
 # Use Redis adapter to run Action Cable in production
