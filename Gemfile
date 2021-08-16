@@ -22,7 +22,6 @@ gem 'capistrano-bundler', '>= 1.1.0'
 gem 'capistrano3-puma'
 gem 'passenger'
 gem 'rexml'
-gem 'i18n'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use Active Model has_secure_password
