@@ -26,6 +26,7 @@ install_plugin Capistrano::SCM::Git
 #   https://github.com/capistrano/rails
 #   https://github.com/capistrano/passenger
 #
+require 'capistrano/rails'
 require "capistrano/rvm"
 # require "capistrano/rbenv"
 # require "capistrano/chruby"
@@ -37,8 +38,6 @@ require "capistrano/bundler"
 require 'capistrano/puma'
 install_plugin Capistrano::Puma  # Default puma tasks
 install_plugin Capistrano::Puma::Systemd  # If you using puma daemonized (not supported in Puma 5+)
-
-require 'capistrano/rails'
 
 # Load custom tasks from `lib/capistrano/tasks` if you have any defined
 Dir.glob("lib/capistrano/tasks/*.rake").each { |r| import r }
