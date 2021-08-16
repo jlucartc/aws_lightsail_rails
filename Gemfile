@@ -17,9 +17,11 @@ gem 'webpacker', '~> 5.0'
 gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.7'
-gem 'capistrano-rvm'
-gem 'capistrano-bundler', '>= 1.1.0'
-gem 'capistrano3-puma'
+gem 'capistrano', '~> 3.10', require: false
+gem 'capistrano-rvm', require: false
+gem 'capistrano-rails', '~> 1.6', require: false
+gem 'capistrano-bundler', '>= 1.1.0', require: false
+gem 'capistrano3-puma', require: false
 gem 'passenger'
 gem 'rexml'
 gem 'listen'
@@ -39,8 +41,6 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'pry'
-  gem 'capistrano', '~> 3.10', require: false
-  gem 'capistrano-rails', '~> 1.6', require: false
 end
 
 group :development do
