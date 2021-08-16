@@ -26,15 +26,15 @@ require "capistrano/deploy"
 #   https://github.com/capistrano/passenger
 #
 require 'capistrano/rails'
-require "capistrano/rvm"
 require "capistrano/bundler"
+require "capistrano/rvm"
+require 'capistrano/puma'
 # require "capistrano/rbenv"
 # require "capistrano/chruby"
 # require "capistrano/rails/assets"
 # require "capistrano/rails/migrations"
 # require "capistrano/passenger"
 
-require 'capistrano/puma'
 install_plugin Capistrano::Puma  # Default puma tasks
 install_plugin Capistrano::Puma::Systemd  # If you using puma daemonized (not supported in Puma 5+)
 
