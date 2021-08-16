@@ -176,6 +176,8 @@ GEM
     regexp_parser (2.1.1)
     rexml (3.2.5)
     rubyzip (2.3.2)
+    rvm-capistrano (1.5.0)
+      capistrano (>= 2.15.4)
     sass-rails (6.0.0)
       sassc-rails (~> 2.1, >= 2.1.1)
     sassc (2.4.0)
@@ -250,6 +252,7 @@ DEPENDENCIES
   rack-mini-profiler (~> 2.0)
   rails (~> 6.1.4)
   rexml
+  rvm-capistrano
   sass-rails (>= 6)
   selenium-webdriver
   spring
