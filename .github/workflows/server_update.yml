@@ -1,6 +1,0 @@
-name: Updating the server
-on: [push]
-jobs:
-  runs-on: ubuntu-latest
-  steps:
-    - uses
