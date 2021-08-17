@@ -7,7 +7,7 @@ require "capistrano/deploy"
 #require 'capistrano/puma'
 require 'capistrano/passenger'
 
-install_plugin Capistrano::Puma
+#install_plugin Capistrano::Puma
 
 require "capistrano/scm/git"
 install_plugin Capistrano::SCM::Git
