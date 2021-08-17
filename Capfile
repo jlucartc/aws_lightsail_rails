@@ -1,9 +1,10 @@
 require "capistrano/setup"
 require "capistrano/deploy"
-require 'capistrano/rails'
-require "capistrano/bundler"
-require "capistrano/rvm"
-require 'capistrano/puma'
+
+#require 'capistrano/rails'
+#require "capistrano/bundler"
+#require "capistrano/rvm"
+#require 'capistrano/puma'
 require 'capistrano/passenger'
 
 install_plugin Capistrano::Puma
